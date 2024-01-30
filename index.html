@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parking System</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Parking System</h1>
+            <div id="availability">Available Spaces: <span id="availableSpaces">10</span></div>
+            <button onclick="reserveSpace()">Reserve Parking Space</button>
+            <button onclick="navigateToReservedSpace()">Navigate to Reserved Space</button>
+            <div class="history-section">
+                <h2>Recent Reservations</h2>
+                <div id="currentReservation"></div>
+                <button onclick="downloadReceipt()">Download Receipt</button>
+            </div>
+            <div class="history-section" id="history">
+                <h2>History</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
